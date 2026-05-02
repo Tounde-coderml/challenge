@@ -74,7 +74,7 @@ flex-direction: row;
 align-items: flex-start;
 padding: 0px;
 gap: 38px;
-
+-
 position: absolute;
 width: 418px;
 height: 25px;

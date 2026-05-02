@@ -1,64 +1,10 @@
 /* styles.css */
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
-body{background:#f5f7fa;color:#333;}
-header{background:#fff;padding:20px 60px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,0.05);} 
-header h1{color:#2b7cff;}
-nav a{margin-left:20px;text-decoration:none;color:#333;font-weight:500;/* Rectangle 620 */
-
-position: absolute;
-width: 1280px;
-height: 90px;
-left: 80px;
-top: 40px;
-
-/* Light Blue Design */
-background: #E6F6FE;
-border-radius: 10px;
-/* Frame 2 */
-
-/* Mise en page automatique */
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 38px;
-
-position: absolute;
-width: 418px;
-height: 25px;
-left: 513px;
-top: 73px;
-
-
-}
-.hero{display:flex;align-items:center;justify-content:space-between;padding:60px;background:#eef4ff;}
-.hero-text{max-width:500px;}
-.hero h2{font-size:40px;margin-bottom:20px;}
-.hero p{margin-bottom:20px;color:#666;}
-.btn{background:#2b7cff;color:#fff;padding:12px 20px;border:none;border-radius:6px;cursor:pointer;}
-.hero img{width:300px;border-radius:10px;}
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:60px;}
-.card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.05);text-align:center;}
-.card h3{margin-bottom:10px;}
-.section{padding:60px;}
-.section h2{text-align:center;margin-bottom:40px;}
-.articles{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-.article{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,0.05);} 
-.article img{width:100%;height:150px;object-fit:cover;}
-.article-content{padding:15px;}
-.stats{display:flex;justify-content:space-around;background:#2b7cff;color:#fff;padding:40px;}
-.stat{text-align:center;}
-.footer{background:#111;color:#fff;padding:40px;text-align:center;}
-.footer input{padding:10px;width:250px;border:none;border-radius:5px;margin-right:10px;}
-.footer button{padding:10px 15px;border:none;background:#2b7cff;color:#fff;border-radius:5px;}
-@media(max-width:900px){
-.hero{flex-direction:column;text-align:center;}
-.features,.articles{grid-template-columns:1fr;}
-}
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body { background: #f5f7fa; color: #333; }
 
 /* HEADER */
 .header {
-  background-color: #EAF2FC;
+  background-color: #E6F6FE;
   padding: 0 24px;
 }
 
@@ -91,9 +37,7 @@ top: 73px;
   transition: color 0.2s;
 }
 
-.menu a:hover {
-  color: #1A8FE3;
-}
+.menu a:hover { color: #1A8FE3; }
 
 .menu a.active {
   font-weight: 700;
@@ -112,7 +56,7 @@ top: 73px;
   height: 44px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #4CAF50; /* cercle vert autour de la photo */
+  border: 3px solid #4CAF50;
 }
 
 /* BOUTON */
@@ -132,4 +76,161 @@ top: 73px;
 .btn-book:hover {
   background: #0F6BB5;
   transform: translateY(-2px);
+}
+
+/* HERO */
+.hero { display: flex; align-items: center; justify-content: space-between; padding: 60px; background: #eef4ff; }
+.hero-text { max-width: 500px; }
+.hero h2 {
+  font-family: 'General Sans', sans-serif;
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: #011632;
+  text-transform: capitalize;
+  max-width: 687px;
+
+}
+.hero{
+background-color: white;
+}
+.hero p { margin-bottom: 20px; color: #666; }
+.btn { background: #2b7cff; color: #fff; padding: 12px 20px; border: none; border-radius: 6px; cursor: pointer; }
+.hero img { width: 300px; border-radius: 10px; }
+
+/* FEATURES */
+.features { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; padding: 60px; }
+.card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center; }
+.card h3 { margin-bottom: 10px; }
+
+/* SECTIONS */
+.section { padding: 60px; }
+.section h2 { text-align: center; margin-bottom: 40px; }
+.articles { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+.article { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.article img { width: 100%; height: 150px; object-fit: cover; }
+.article-content { padding: 15px; }
+
+/* STATS */
+.stats { display: flex; justify-content: space-around; background: #2b7cff; color: #fff; padding: 40px; }
+.stat { text-align: center; }
+
+/* FOOTER */
+.footer { background: #111; color: #fff; padding: 40px; text-align: center; }
+.footer input { padding: 10px; width: 250px; border: none; border-radius: 5px; margin-right: 10px; }
+.footer button { padding: 10px 15px; border: none; background: #2b7cff; color: #fff; border-radius: 5px; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero { flex-direction: column; text-align: center; }
+  .features, .articles { grid-template-columns: 1fr; }
+  .menu { gap: 20px; }
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Bouton */
+.btn-primary {
+  background: #2B7CFF;
+  color: #fff;
+  padding: 18px 28px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Bloc téléphone */
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Carré autour de l’icône */
+.phone-icon {
+  background: #EAF2FF;
+  border: 2px solid #2B7CFF;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Texte */
+.phone-text span {
+  color: #2B7CFF;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.phone-text p {
+  margin: 3px 0 0;
+  font-size: 14px;
+  color: #333;
+}
+.review-card {
+  width: 374px;
+  background: #ffffff;
+  border: 1.5px solid #D0E8FF;
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Partie haute : avatar + nom + linkedin */
+.review-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #011632;
+}
+
+.review-role {
+  font-size: 13px;
+  color: #6B8BA4;
+}
+
+/* Icone LinkedIn */
+.review-linkedin img {
+  width: 28px;
+  height: 28px;
+}
+
+/* Texte avis */
+.review-text {
+  font-size: 14px;
+  color: #3A5068;
+  line-height: 1.6;
 }
