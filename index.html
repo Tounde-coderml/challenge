@@ -1,108 +1,213 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Medical Landing Page</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.cdnfonts.com/css/general-sans" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.cdnfonts.com/css/general-sans" rel="stylesheet">
 </head>
+
 <body>
-<header class="header">
-  <div class="container">
 
-    <!-- Logo -->
-    <div class="logo">
-      <img src="assets/logo.svg" alt="logo">
+  <!-- ── HEADER ── -->
+  <header class="header">
+    <div class="container">
+
+      <div class="logo">
+        <img src="assets/logo.svg" alt="Logo">
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <img src="assets/photoHeader.svg" alt="User" class="header-avatar">
+        <a href="#" class="btn-book">Book Now</a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+
+    <div class="hero-text">
+      <h2>Get Ready For Your Best Dental Experience !</h2>
+      <p>We use only the best quality materials on the market in order to provide the best products to our patients,
+        So don't worry about anything and book yourself.</p>
+
+      <div class="hero-actions">
+
+        <!-- Ligne 1 : bouton + téléphone -->
+        <div class="hero-actions-top">
+          <button class="btn-primary">Book an appointment</button>
+          <div class="phone">
+            <div class="phone-icon">
+              <img src="assets/tel.svg" alt="Téléphone">
+            </div>
+            <div class="phone-text">
+              <span>Dental 24H Emergency</span>
+              <p>0900-78601</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ligne 2 : carte review -->
+        <div class="hero-actions-bottom">
+          <div class="review-card">
+            <div class="review-top">
+              <div class="review-author">
+                <img src="assets/thomas.svg" alt="Thomas Daniel" class="review-avatar">
+                <div>
+                  <div class="review-name">Thomas daniel</div>
+                  <div class="review-role">Sr Dental</div>
+                </div>
+              </div>
+              <a href="#" class="review-linkedin">
+                <img src="assets/linkedin.svg" alt="LinkedIn">
+              </a>
+            </div>
+            <p class="review-text">
+              Top Quality dental treatment done by field experts,<br>
+              Highly Recommended for everyone
+            </p>
+          </div>
+        </div>
+
+      </div>
     </div>
 
-    <!-- Navigation -->
-    <nav>
-      <ul class="menu">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Blogs</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- Droite : photo + bouton -->
-    <div class="header-right">
-      <img src="assets/photoHeader.svg" alt="user" class="header-avatar">
-      <a href="#" class="btn-book">Book Now</a>
+    <!-- Image docteur -->
+    <div class="hero-right">
+      <img src="assets/Image.png" alt="Docteur" class="hero-img">
     </div>
 
-  </div>
-</header>
+  </section>
 
-<section class="hero">
-<div class="hero-text">
-<h2>Get Ready For Your Best Dental Experience !</h2>
-<p>We use only the best quality materials on the market in order to provide the best products to our patients,
-   So don’t worry about anything and book yourself.</p>
-<div class="hero-actions">
-  <button class="btn-primary">Book an appointment</button>
-  <div class="phone">
-    <div class="phone-icon">
-      <img src="assets/tel.svg" alt="tel">
+  <!-- ── SERVICES ── -->
+  <section class="services">
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="assets/dent.svg" alt="Root Canal">
+        </div>
+        <h3>Root Canal Treatment</h3>
+        <p>Root canal treatment (endodontics) is a dental procedure used to treat infection at the centre of a tooth.</p>
+        <a href="#" class="learn-more">Learn More <span>⊙</span></a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="assets/levres.svg" alt="Cosmetic Dentist">
+        </div>
+        <h3>Cosmetic Dentist</h3>
+        <p>Cosmetic dentistry is the branch of dentistry that focuses on improving the appearance of your smile.</p>
+        <a href="#" class="learn-more">Learn More <span>⊙</span></a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="assets/implant.svg" alt="Dental Implants">
+        </div>
+        <h3>Dental Implants</h3>
+        <p>A dental implant is an artificial tooth root that's placed into your jaw to hold a prosthetic tooth or bridge.</p>
+        <a href="#" class="learn-more">Learn More <span>⊙</span></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── WELCOME ── -->
+  <section class="welcome">
+
+    <div class="welcome-text">
+      <h2>We're <span class="underline">Welcoming</span> New Patients And Can't Wait To Meet You.</h2>
+      <p>We use only the best quality materials on the market in order to provide the best products to our patients,
+        So don't worry about anything and book yourself.</p>
+      <div class="welcome-form">
+        <div class="welcome-input">
+          <img src="assets/tel.svg" alt="Phone" class="input-icon">
+          <input type="tel" placeholder="Enter your Phone Number">
+        </div>
+        <button class="btn-submit">Submit</button>
+      </div>
     </div>
 
-    <div class="phone-text">
-      <span>Dental 24H Emergency</span>
-      <p>0900-78601</p>
+    <div class="welcome-image">
+      <div class="welcome-img-bg"></div>
+      <img src="assets/patient.svg" alt="Patient">
     </div>
-  </div>
-</div> 
-</div>
 
-<div class="hero-right">
+    
 
-  <!-- Image docteur -->
-  <img src="assets/Image.png" class="img">
-</div>
+  </section>
 
-</section>
+  <!-- ── ARTICLES ── -->
+  <section class="section">
+    <div class="container">
+      <h2>Latest Articles</h2>
+      <div class="articles">
+        <div class="article">
+          <img src="https://via.placeholder.com/300" alt="Article 1">
+          <div class="article-content">
+            <h4>Article 1</h4>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div class="article">
+          <img src="https://via.placeholder.com/300" alt="Article 2">
+          <div class="article-content">
+            <h4>Article 2</h4>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div class="article">
+          <img src="https://via.placeholder.com/300" alt="Article 3">
+          <div class="article-content">
+            <h4>Article 3</h4>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="features">
-<div class="card"><h3>Qualified Doctors</h3><p>Lorem ipsum</p></div>
-<div class="card"><h3>Modern Equipment</h3><p>Lorem ipsum</p></div>
-<div class="card"><h3>Emergency Care</h3><p>Lorem ipsum</p></div>
-</section>
+  <!-- ── STATS ── -->
+  <section class="stats">
+    <div class="container">
+      <div class="stat">
+        <h2>50+</h2>
+        <p>Doctors</p>
+      </div>
+      <div class="stat">
+        <h2>1000+</h2>
+        <p>Patients</p>
+      </div>
+      <div class="stat">
+        <h2>20+</h2>
+        <p>Years Experience</p>
+      </div>
+    </div>
+  </section>
 
-<section class="section">
-<h2>Latest Articles</h2>
-<div class="articles">
-<div class="article">
-<img src="https://via.placeholder.com/300">
-<div class="article-content"><h4>Article 1</h4><p>Lorem ipsum</p></div>
-</div>
-<div class="article">
-<img src="https://via.placeholder.com/300">
-<div class="article-content"><h4>Article 2</h4><p>Lorem ipsum</p></div>
-</div>
-<div class="article">
-<img src="https://via.placeholder.com/300">
-<div class="article-content"><h4>Article 3</h4><p>Lorem ipsum</p></div>
-</div>
-</div>
-</section>
-
-<section class="stats">
-<div class="stat"><h2>50+</h2><p>Doctors</p></div>
-<div class="stat"><h2>1000+</h2><p>Patients</p></div>
-<div class="stat"><h2>20+</h2><p>Years Experience</p></div>
-</section>
-
-<section class="footer">
-<h2>Subscribe Newsletter</h2>
-<input type="email" placeholder="Your email">
-<button>Subscribe</button>
-<p style="margin-top:20px;">© 2026 MediCare</p>
-</section>
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <h2>Subscribe Newsletter</h2>
+    <input type="email" placeholder="Your email">
+    <button>Subscribe</button>
+    <p style="margin-top:20px;">© 2026 MediCare</p>
+  </footer>
 
 </body>
+
 </html>
-
-
