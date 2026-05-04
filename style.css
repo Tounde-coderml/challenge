@@ -172,3 +172,241 @@ body { background: #ffffff; color: #333; }
   .team-card { height: 250px; }
   .team-prev, .team-next { width: 60px; }
 }
+
+/* ── HAPPY CLIENTS ── */
+.clients {
+  background: #ffffff;
+  padding: 80px 60px 60px;
+}
+
+.clients-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.clients-header h2 {
+  font-family: 'General Sans', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #011632;
+  margin-bottom: 16px;
+}
+
+.clients-header p {
+  font-size: 15px;
+  color: #5A7089;
+  line-height: 1.7;
+}
+
+/* SLIDER */
+.clients-slider-wrapper {
+  overflow: hidden;
+}
+
+.clients-slider {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+
+/* CARTE */
+.client-card {
+  flex: 1;
+  min-width: 0;
+  background: #ffffff;
+  border: 1.5px solid #E0EEF8;
+  border-radius: 16px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+/* HAUT : avatar + nom + étoiles */
+.client-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.client-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.client-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #011632;
+  margin-bottom: 4px;
+}
+
+.client-stars {
+  color: #F5A623;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+/* TEXTE */
+.client-text {
+  font-size: 14px;
+  color: #5A7089;
+  line-height: 1.7;
+}
+
+/* FLÈCHES */
+.clients-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+  background: white;
+}
+
+.clients-prev,
+.clients-next {
+  width: 96px;
+  height: 44px;
+  border-radius: 3px;
+  border: none;
+  background: #011632;
+  font-size: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.2s;
+  line-height: 1;
+}
+
+.clients-prev:hover,
+.clients-next:hover {
+  background: #1A8FE3;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .clients { padding: 60px 20px; }
+  .clients-slider { flex-direction: column; }
+}
+
+/* ── NEWS & ARTICLES ── */
+.news {
+  background: #ffffff;
+  padding: 60px;
+}
+
+.news-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.news-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+}
+
+.news-header-left h2 {
+  font-family: 'General Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #011632;
+}
+
+.news-header-left p {
+  font-size: 15px;
+  color: #5A7089;
+  line-height: 1.7;
+}
+
+.news-header .btn-primary {
+  border-radius: 8px; /* ← moins arrondi */
+}
+/* GRILLE */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* CARTE */
+.news-card {
+  background: #EAF6FE;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  padding: 10px 10px 0 10px;
+}
+
+.news-card-body {
+  padding: 16px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* TAG */
+.news-tag {
+  display: inline-block;
+  background: #011632;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+/* TITRE */
+.news-title {
+  font-family: 'General Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #011632;
+}
+
+/* EXCERPT */
+.news-excerpt {
+  font-size: 14px;
+  color: #5A7089;
+  line-height: 1.6;
+}
+
+/* AUTEUR */
+.news-author {
+  font-size: 13px;
+  color: #5A7089;
+  text-align: right;
+  margin-top: 4px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .news-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .news-grid { grid-template-columns: 1fr; }
+}
